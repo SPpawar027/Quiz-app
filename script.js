@@ -12,8 +12,11 @@ const four = document.querySelector(".four")
 const stopwatch = document.querySelector(".stopwatch")
 const nextpage = document.querySelector(".nextpage")
 const optiondiv = document.querySelectorAll(".option11>div")
+const submitbtn = document.querySelector(".submitbtn")
+const number = document.querySelector(".number")
 
 console.log(optiondiv)
+let correct = 0;
 let questionIndex = 0;
 let timerInterval = null;
 let questions = [
@@ -209,7 +212,11 @@ function loadQuestion(index) {
   three.innerHTML = currentQuestion.options[2];
   four.innerHTML = currentQuestion.options[3];
 }
+submitbtn.addEventListener("click", () => {
+  localStorage.setItem("score", JSON.stringify(correct))
+  console.log(correct)
 
+})
 
 
 startbtn.addEventListener("click", () => {
@@ -218,7 +225,7 @@ startbtn.addEventListener("click", () => {
 
   startTimer();
 })
-  let correct = 0
+  
   let clickedelement;
   option11.addEventListener("click", (event) => {
      clickedelement = event.target
@@ -239,7 +246,6 @@ startbtn.addEventListener("click", () => {
       option11.style.border = "none"
      }
   })
-
 
 
 
@@ -268,7 +274,8 @@ nextoption.addEventListener("click", () => {
     startTimer(); // Restart the timer
   } else {
     alert("Quiz is over!");
-    clearInterval(timerInterval); // Stop the timer when quiz is over
+    clearInterval(timerInterval); 
+    localStorage.setItem("score" , JSON.stringify(correct))// Stop the timer when quiz is over
  
     
   }

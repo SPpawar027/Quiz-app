@@ -1,12 +1,146 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
-    background-color: #F6F4F0;;
+    background-color: #F6F4F0;
+    ;
 }
 
+.main {
+    width: 100%;
+    height: screen;
+}
 
+.allcenter {
+    width: 70%;
+    height: screen;
+
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.top {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top h2 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    top: -15px;
+    left: 10px;
+
+}
+
+.allcenter img {
+    width: 200px;
+    height: 90px;
+}
+
+.progressbar {
+    width: 90%;
+    height: 200px;
+    background-color: rgba(88, 209, 88, 0.201);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upperbar {
+    width: 80%;
+    height: 90px;
+    background-color: #FF7A7A;
+    border-radius: 10px;
+}
+
+.lowerbar {
+    width: 50%;
+    height: 100%;
+    background-color: #35BD3A;
+    border-radius: 10px;
+}
+
+.score {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.quote {
+    width: 90%;
+    height: 100px;
+    padding-top: 40px;
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+
+}
+
+.quotes {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.retry {
+
+    background-color: #35BD3A;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-family: Poppins;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.sharediv{
+    text-align: center;
+}
+
+.share {
+    text-align: center;
+    margin-top: 70px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #535353;
+    user-select: none;
+   display: block;
+
+}
+.socialimg img{
+    width: 25px;
+    height: 28px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.startfooter {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.startfooter p {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+}
