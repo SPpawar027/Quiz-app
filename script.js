@@ -14,7 +14,19 @@ const nextpage = document.querySelector(".nextpage")
 const optiondiv = document.querySelectorAll(".option11>div")
 const submitbtn = document.querySelector(".submitbtn")
 const number = document.querySelector(".number")
+const soundbtn = document.querySelector(".soundicon img")
+const audioplay = document.querySelector("#audio-play")
 
+
+soundbtn.addEventListener("click" , ()=>{
+console.log("on")
+  if(audioplay.paused){
+    audioplay.play()
+  }
+  else{
+    audioplay.pause()
+  }
+})
 console.log(optiondiv)
 let correct = 0;
 let questionIndex = 0;
