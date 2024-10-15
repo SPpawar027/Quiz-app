@@ -17,7 +17,7 @@ const number = document.querySelector(".number")
 const soundbtn = document.querySelector(".soundicon img")
 const audioplay = document.querySelector("#audio-play")
 
-
+soundbtn.click()
 soundbtn.addEventListener("click" , ()=>{
 console.log("on")
   if(audioplay.paused){
@@ -283,7 +283,9 @@ nextoption.addEventListener("click", () => {
   if (questionIndex < questions.length - 1) {
     questionIndex++; // Move to the next question
     loadQuestion(questionIndex); // Load the new question
-    startTimer(); // Restart the timer
+    startTimer();
+    window.scrollTo(0, 0);
+// Restart the timer
   } else {
     alert("Quiz is over!");
     clearInterval(timerInterval); 
