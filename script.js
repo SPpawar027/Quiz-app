@@ -209,7 +209,7 @@ function startTimer() {
     } else {
       clearInterval(timerInterval);
     }
-  }, 200);
+  }, 1000);
 }
 
 function loadQuestion(index) {
